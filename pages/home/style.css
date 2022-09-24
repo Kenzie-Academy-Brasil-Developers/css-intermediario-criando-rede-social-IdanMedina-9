@@ -1,0 +1,67 @@
+.newpost{
+    display: flex;
+    flex-direction: column;
+    margin-top: 124px;
+    /* overflow: hidden; */
+}
+
+.user{
+    display: flex;
+    align-items: flex-start;
+}
+
+.user-id{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    gap: 8px;
+}
+
+img {
+    width: 52px;
+    height: 52px;
+    margin-left: 4px;
+}
+
+aside{
+    margin-top: 40px;
+}
+
+.suggestions{
+    display: flex;
+    gap:57px;
+}
+
+.card-suggest {
+    margin: 63px 0 0 4px;
+}
+ .posts {
+    margin: 40px 0 0 4px;
+ }
+ .post ul{
+    display: flex;
+    flex-direction: column;
+ }
+ .card-post{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .open-like{
+    display: flex;
+    margin:32px 0 50px 0;
+ }
+
+ .like{
+     display: flex;
+     align-items: center;
+     gap: 7px;
+     margin-left: 20px;
+     position: relative;
+     bottom: 10px;
+    }
+    .like img{
+       width: 22.76px;
+       height: 20px;
+    }

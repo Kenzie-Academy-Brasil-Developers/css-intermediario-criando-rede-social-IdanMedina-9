@@ -4,16 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
+    <link rel="stylesheet" href="../../styles/navbar.css" />
+    <link rel="stylesheet" href="../../styles/text.css" />
+    <link rel="stylesheet" href="../../styles/input.css" />
+    <link rel="stylesheet" href="../../styles/button.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>TechPosters - Home</title>
   </head>
+
   <body>
-    <header></header>
-    <main></main>
+
+    <header>
+      <nav class="navbar navbar-items">
+        <h1>TechPosters</h1>
+        <p>Sair</p>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <section class="newpost">
+        <div class="user">
+          <img src="../../assets/img/user1.svg" />
+          <div class="user-id">
+            <h4 class="name">Samuel Leão</h4>
+            <p class="stack">Front end Engineer</p>
+          </div>
+        </div>
+        <form>
+          <input type="text" placeholder="Digitar título do post" />
+          <textarea
+            rows="5"
+            placeholder="Digitar descrição do post"
+          ></textarea>
+          <button type="submit" class="form-button">Postar</button>
+        </form>
+      </section>
+
+      <aside>
+        <h3>Sujestões para você seguir</h3>
+        <ul class="suggestions">
+          <li class="card-suggest">
+            <div class="user">
+              <img src="../../assets/img/user3.svg">
+              <div class="user-id">
+                <h4 class="name">Carlos Lima</h4>
+                <p class="stack">UX e UI Designer</p>
+              </div>
+            </div>
+            <button>Seguir</button>
+          </li>
+          <li class="card-suggest">
+            <div class="user">
+              <img src="../../assets/img/user6.svg">
+              <div class="user-id">
+                <h4 class="name">Samuel Persuhn</h4>
+                <p class="stack" id="none">""</p>
+              </div>
+            </div>
+            <button>Seguir</button>
+          </li>
+          <li class="card-suggest">
+            <div class="user">
+              <img src="../../assets/img/user7.svg">
+              <div class="user-id">
+                <h4 class="name">Filipe Gutierry</h4>
+                <p class="stack" id="none">""</p>
+              </div>
+            </div>
+            <button>Seguir</button>
+          </li>
+        </ul>
+      </aside>
+
+
+      <section class="posts">
+        <h2>Posts</h2>     
+        <ul>
+          <li class="card-post">
+            <div class="user">
+              <img src="../../assets/img/user2.svg">
+              <div class="user-id">
+                <h4 class="name">Samuel Persuhn</h4>
+                <p class="stack">Front end Engineer</p>
+              </div> 
+            </div>
+            <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+              <p class="description">A Framework Digital, empresa mineira especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 08 e 28 de agosto. O programa é conhecido como Framework Padawans, com inspiração nos filmes Star Wars. Nas histórias, os iniciantes fazem treinamentos para se tornar cavaleiros Jedi, que compõem o lado bom da força.</p>
+              <div class="open-like">
+                <button data-modal-control="post">Abrir Post</button>
+                <p class="like"><img src="../../assets/img/Vector.png"><span>25</span></p>
+              </div>
+          </li>
+          <li class="card-post">
+            <div class="user">
+              <img src="../../assets/img/user4.svg">
+              <div class="user-id">
+                <h4 class="name">Carla Maria</h4>
+                <p class="stack">Back end Engineer</p>
+              </div> 
+            </div>
+            <h2>Programa de estágio abre vagas em Segurança da Informação com regime remoto</h2>
+              <p class="description">Em Segurança da Informação, as vagas são destinadas às áreas de Security Operations Center (SOC), Administração de Dispositivos de Segurança (ADS), Resposta a Incidentes (RI), Segurança e Privacidade e Consultoria Técnica. O candidato interessado deverá estar matriculado em um curso superior em Ciência da Computação, Segurança da Informação, Tecnologia da Informação e afins, com previsão de conclusão do curso de fevereiro de 2023 a fevereiro de 2025.</p>
+              <div class="open-like">
+                <button data-modal-control="post">Abrir Post</button>
+                <p class="like"><img src="../../assets/img/Vector.png"><span>25</span></p>
+              </div>
+          </li>
+          <li class="card-post">
+            <div class="user">
+              <img src="../../assets/img/user5.svg">
+              <div class="user-id">
+                <h4 class="name">Júlia Martins</h4>
+                <p class="stack">Devop's</p>
+              </div> 
+            </div>
+            <h2>O que é programação orientada a objetos e programação funcional</h2>
+              <p class="description">A Programação Funcional é uma orientação focada na programação declarativa. Conhecendo mais a programação funcional a partir de códigos podemos nos deparar de primeira com o conceito mais central da programação funcional, que é o conceito de funções puras, isso significa que o retorno de uma função deve depender apenas dos seus parâmetros de entrada. Com classes podemos editar os valores das propriedades dos objetos criados ou ainda criar métodos para essas propriedades, ainda por cima podemos definir se vão ser públicos (vão para o objeto) ou estáticos (não são instanciados, ou seja, não vão para o objeto), e isso tem seu lado bom e ruim.</p>
+              <div class="open-like">
+                <button data-modal-control="post">Abrir Post</button>
+                <p class="like"><img src="../../assets/img/Vector.png"><span>25</span></p>
+              </div>
+          </li>
+        </ul>
+      </section>
+
+    </main>
   </body>
-  <script src="/script/database/users.js"></script>
-  <script src="/script/database/posts.js"></script>
-  <script src="/script/database/sugestUsers.js"></script>
-  <script src="index.js"></script>
+  <script src="../../script/database/users.js"></script>
+  <script src="../../script/database/posts.js"></script>
+  <script src="../../script/database/sugestUsers.js"></script>
+  <script src="./index.js"></script>
 </html>

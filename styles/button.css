@@ -1,0 +1,38 @@
+button{
+    font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+cursor: pointer;
+}
+
+.form-button{
+padding: 0px 12px;
+color: var(--color-grey-3);
+width: 69px;
+height: 38px;
+background: var(--color-grey-4);
+border: 2px solid var(--color-grey-4);
+border-radius: 4px;
+margin-left: auto;
+}
+
+.card-suggest button {
+margin-top:20px;
+color: var(--color-grey-1);
+border: 1px solid var(--color-grey-1);
+border-radius: 2px;
+padding: 6px 12px;
+gap: 10px;
+background-color: var(--color-white-fixed);
+}
+
+.open-like button{
+padding: 0px 12px;
+gap: 10px;
+width: 96px;
+height: 38px;
+background-color: var(--color-grey-1);
+border: 2px solid var(--color-grey-1);
+border-radius: 4px;
+color: var(--color-white-fixed);
+}
