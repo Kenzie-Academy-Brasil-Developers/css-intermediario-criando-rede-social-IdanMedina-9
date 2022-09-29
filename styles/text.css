@@ -23,12 +23,16 @@ line-height: 24px;
 color: var(--color-grey-1);
 }
 
-.posts h2 {
+.title {
   margin-top: 32px;;
   font-weight: 700;
 font-size: 28px;
 line-height: 40px;
 color: var(--color-grey-1);
+}
+
+.modal .title{
+  margin: 34px 14px 20px 14px;
 }
 
 .description {
@@ -39,10 +43,14 @@ line-height: 28px;
 color: var(--color-grey-2);
 }
 
+.modal .description{
+  margin: 0px 14px 24px 14px;
+}
+
 .like span{
 width: 17px;
 height: 16px;
-  font-weight: 400;
+font-weight: 400;
 font-size: 14px;
 line-height: 16px;
 color: var(--color-grey-1);

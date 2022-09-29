@@ -25,6 +25,9 @@ img {
 
 aside{
     margin-top: 40px;
+    position: sticky;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 .suggestions{
@@ -58,10 +61,56 @@ aside{
      align-items: center;
      gap: 7px;
      margin-left: 20px;
-     position: relative;
-     bottom: 10px;
     }
     .like img{
        width: 22.76px;
        height: 20px;
+    }
+    .wrapper-close{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 26px;
+        margin-left: 14px;
+    }
+    .close-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-left: 320px;
+        margin-top: -80px;
+        padding: 17px;
+        background-color: var(--color-grey-5);
+        color:var(--color-grey-3);
+        border-radius: 50%;
+        height: 0px;
+        width: 13px;
+        cursor: pointer;
+    }
+    @media (min-width:780px){
+        .container{
+            position: absolute;
+            right: 33vw;
+        }
+
+        aside{
+            position: fixed;
+            /*margin-*/left: 75vw;
+            top: 88px;
+            min-width: 20vw;
+        }
+        .suggestions{
+            flex-direction: column;
+        }
+        .navbar p{
+            margin-right: 100px;
+        }
+        .card-suggest{
+            display: flex;
+            justify-content:space-between;
+        }
+
+
     }
