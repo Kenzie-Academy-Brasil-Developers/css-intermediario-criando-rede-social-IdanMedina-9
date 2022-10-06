@@ -90,15 +90,11 @@ aside{
         cursor: pointer;
     }
     @media (min-width:780px){
-        .container{
-            position: absolute;
-            right: 33vw;
-        }
-
         aside{
-            position: fixed;
-            /*margin-*/left: 75vw;
-            top: 88px;
+            position: sticky;
+            margin-left: 1327px;
+            margin-top: -500px;
+            top: 100px;
             min-width: 20vw;
         }
         .suggestions{
